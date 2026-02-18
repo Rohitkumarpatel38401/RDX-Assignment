@@ -1,0 +1,88 @@
+/* --- Global Variables --- */
+:root {
+    --syn-blue: #004a80;
+    --syn-orange: #f2a900;
+    --syn-white: #ffffff;
+    --syn-text: #444444;
+    --syn-grad-main: linear-gradient(91deg, #f2a900 0%, #a25291 50%, #004a80 100%);
+    --syn-trans: 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+/* --- Global Utilities --- */
+.syn-gsap-reveal { opacity: 0; transform: translateY(30px); }
+
+/* --- Navbar / Header Section --- */
+.syn-nav { background: var(--syn-blue); color: var(--syn-white); padding: 12px 0; }
+.syn-nav-logo { font-weight: 800; font-style: italic; font-size: 26px; letter-spacing: -1px; }
+
+/* --- Hero Section --- */
+.syn-hero { min-height: 85vh; display: flex; align-items: center; position: relative; background: var(--syn-white); overflow: hidden; }
+.syn-hero-innovating { color: var(--syn-orange); font-weight: 700; font-size: clamp(1.5rem, 5vw, 2.2rem); margin-bottom: -5px; }
+.syn-hero-reach { color: var(--syn-blue); font-size: clamp(3rem, 10vw, 4.5rem); font-weight: 900; line-height: 0.85; margin-bottom: 25px; }
+.syn-hero-desc { color: var(--syn-text); font-size: 1.1rem; line-height: 1.5; border-left: 3px solid var(--syn-orange); padding-left: 15px; }
+
+/* Custom Button (Conflict-free) */
+.syn-btn {
+    position: relative; display: inline-block; text-decoration: none; 
+    color: var(--syn-blue); font-weight: 700; font-size: 1rem;
+    padding: 10px 24px; margin: 10px 10px 10px 0;
+    transition: color var(--syn-trans); z-index: 1; overflow: hidden;
+}
+.syn-btn::before {
+    content: ""; position: absolute; top: 0; left: 0; width: 0; height: 100%;
+    background-color: var(--syn-orange); transition: width var(--syn-trans); z-index: -1;
+}
+.syn-btn:hover { color: var(--syn-white); }
+.syn-btn:hover::before { width: 100%; }
+
+/* --- Stats Section --- */
+.syn-stats { background-color: var(--syn-white); padding: 80px 0; }
+.syn-stats-title { font-weight: 700; color: #333; font-size: clamp(1.8rem, 4vw, 2.5rem); margin-bottom: 50px; text-align: center; }
+
+.syn-stats-grid { display: flex; flex-wrap: wrap; border-top: 1px dotted #ccc; }
+.syn-stats-item { border-right: 1px dotted #ccc; border-bottom: 1px dotted #ccc; padding: 40px 30px; flex: 0 0 25%; }
+
+/* Gradient Text Effect */
+.syn-stats-num {
+    font-size: 3.5rem; font-weight: 800; display: inline-block;
+    background: var(--syn-grad-main); -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; line-height: 1; margin-bottom: 10px;
+}
+
+/* Responsiveness */
+@media (max-width: 991px) {
+    .syn-hero { text-align: center; padding: 60px 0; }
+    .syn-hero-desc { border-left: none; border-top: 3px solid var(--syn-orange); padding-left: 0; padding-top: 15px; display: inline-block; }
+    .syn-stats-item { flex: 0 0 50%; }
+}
+@media (max-width: 576px) {
+    .syn-stats-item { flex: 0 0 100%; border-right: none; text-align: center; }
+}
+
+ /* Scoped Custom Button */
+ .custom-btn {
+    position: relative;
+    display: inline-block;
+    text-decoration: none; 
+    color: var(--syn-blue); 
+    font-weight: 600; 
+    font-size: 1rem;
+    padding: 10px 24px; 
+    border-left: 3px solid var(--syn-orange); 
+    margin: 10px 15px 10px 0;
+    transition: color var(--syn-transition);
+    z-index: 1;
+    overflow: hidden;
+}
+
+.custom-btn::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; width: 0; height: 100%;
+    background-color: var(--syn-orange);
+    transition: width var(--syn-transition);
+    z-index: -1;
+}
+
+.custom-btn:hover { color: #ffffff; }
+.custom-btn:hover::before { width: 100%; }
