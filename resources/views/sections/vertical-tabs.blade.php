@@ -1,5 +1,6 @@
-<section id="syn-vertical-tabs-container">
-    <style>
+
+@push('styles')
+<style>
         #syn-vertical-tabs-container {
             width: 100%;
             margin: 60px 0; 
@@ -149,6 +150,9 @@
             }
         }
     </style>
+@endpush
+<section id="syn-vertical-tabs-container">
+  
 
     <div class="section" id="mainVerticalSection"></div>
 </section>

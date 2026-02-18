@@ -1,3 +1,4 @@
+@push('styles')
 <style>
     /* Scoped Styles to prevent global conflicts */
     #syn-stats-section {
@@ -82,6 +83,7 @@
         #syn-stats-section .stat-item:nth-child(4n) { border-right: none; }
     }
 </style>
+@endpush
 
 <section id="syn-stats-section">
     <div class="container">

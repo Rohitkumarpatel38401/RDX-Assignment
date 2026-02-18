@@ -1,5 +1,6 @@
-<footer id="syn-main-footer">
-    <style>
+
+@push('styles')
+<style>
         #syn-main-footer {
             padding: 80px 0 0 0;
             background-color: #ffffff;
@@ -116,6 +117,9 @@
             .footer-container { flex-direction: column; gap: 15px; text-align: center; }
         }
     </style>
+@endpush
+<footer id="syn-main-footer">
+   
 
     <div class="container">
         <h2 class="center-title">Download Center</h2>

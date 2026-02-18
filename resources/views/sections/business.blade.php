@@ -1,3 +1,4 @@
+@push('styles')
 <style>
     /* Scoped Styles for Business Section */
     #syn-biz-section {
@@ -73,6 +74,7 @@
         #syn-biz-section .hidden-content { height: auto; opacity: 1; } 
     }
 </style>
+@endpush
 
 <section id="syn-biz-section">
     <div class="container">

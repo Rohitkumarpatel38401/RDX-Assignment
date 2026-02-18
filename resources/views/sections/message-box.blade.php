@@ -1,3 +1,4 @@
+@push('styles')
 <style>
     #syn-msg-section-{{ $id }} {
         background-color: #fff;
@@ -87,6 +88,7 @@
     }
     
 </style>
+@endpush
 
 <section id="syn-msg-section-{{ $id }}">
     <div class="container">

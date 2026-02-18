@@ -1,5 +1,5 @@
-<section id="syn-case-studies-section">
-    <style>
+@push('styles')
+<style>
         #syn-case-studies-section {
             /* padding: 80px 0; */
             /* background-color: var(--syn-white); */
@@ -114,6 +114,9 @@
             .swiper-button-next, .swiper-button-prev { display: none; }
         }
     </style>
+@endpush
+<section id="syn-case-studies-section">
+   
 
     <div class="case-header">
         <h2>Case Studies</h2>

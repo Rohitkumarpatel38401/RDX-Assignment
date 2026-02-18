@@ -1,3 +1,4 @@
+@push('styles')
 <style>
     /* Scoped Styles for About Section */
     #syn-about-section {
@@ -73,6 +74,7 @@
         }
     }
 </style>
+@endpush
 
 <section id="syn-about-section">
     <div class="container d-flex justify-content-center">

@@ -1,3 +1,4 @@
+@push('styles')
 <style>
     :root {
         --syn-blue: #004a80;
@@ -55,7 +56,6 @@
     }
 
    
-
     /* GSAP Reveal Base */
     #syn-hero-section .gsap-reveal { opacity: 0; transform: translateY(40px); }
 
@@ -84,6 +84,7 @@
         }
     }
 </style>
+@endpush
 
 <div id="syn-hero-section">
     <div class="top-nav">
